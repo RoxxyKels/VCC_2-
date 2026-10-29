@@ -87,6 +87,7 @@ button:hover,
 }
 
 input,
+select,
 textarea {
     width: 100%;
     max-width: 100%;
@@ -95,6 +96,51 @@ textarea {
     border: 1px solid #bcccdc;
     border-radius: 5px;
     font: inherit;
+    background-color: #ffffff;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #243b53;
+}
+
+.contact-page {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(36, 59, 83, 0.08);
+}
+
+.contact-form {
+    margin-top: 1.5rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.required-note {
+    margin: 0 0 1rem;
+    color: #486581;
+    font-size: 0.9rem;
+}
+
+.submit-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.submit-row button {
+    min-width: 160px;
 }
 
 footer {
@@ -102,4 +148,23 @@ footer {
     text-align: center;
     color: #ffffff;
     background-color: #243b53;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .contact-card {
+        padding: 1.25rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
 }
